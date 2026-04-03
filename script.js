@@ -321,6 +321,13 @@ function setupNavigation() {
     return;
   }
 
+  const closeMenu = () => {
+    menu.classList.remove("open");
+    navActions.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("nav-open");
+  };
+
   toggle.addEventListener("click", () => {
     const isOpen = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!isOpen));
@@ -330,13 +337,16 @@ function setupNavigation() {
   });
 
   [...menu.querySelectorAll("a"), ...navActions.querySelectorAll("a")].forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.remove("open");
-      navActions.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("nav-open");
-    });
+    link.addEventListener("click", closeMenu);
   });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("orientationchange", closeMenu);
 }
 
 function setupRevealAnimations() {

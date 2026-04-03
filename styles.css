@@ -2801,19 +2801,27 @@ main {
     display: none;
   }
 
+  body.nav-open {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   .nav-shell {
     flex-wrap: wrap;
     padding: 14px 0;
   }
 
-  .nav-links.open,
-  .nav-actions.open {
+  .nav-links.open {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
     padding-bottom: 14px;
+  }
+
+  .nav-actions.open {
+    display: none;
   }
 
   .hero-proof,
@@ -3015,8 +3023,7 @@ main {
   }
 
   .floating-demo-cta {
-    right: 14px;
-    bottom: 14px;
+    display: none;
   }
 }
 
@@ -3225,6 +3232,13 @@ main {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
 }
+
+@media (max-width: 980px) {
+  .estimated-cost-text {
+    display: none;
+  }
+}
+
 .estimated-cost-text strong {
   color: white;
   font-weight: 700;
