@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>awaylable favicon</title>
+  <defs>
+    <linearGradient id="aGradient" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#d61f73"/>
+      <stop offset="55%" stop-color="#f04c23"/>
+      <stop offset="100%" stop-color="#c95a00"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="#ffffff"/>
+  <circle cx="32" cy="32" r="29" fill="#ffffff"/>
+  <path fill="url(#aGradient)" d="M35.07 16.48c6.17 0 10.58 3.98 10.58 9.97 0 5.08-2.96 10.59-7.43 16.95l-4.67 6.6h-6.7l2.78-3.94c-2.1 1.5-4.57 2.22-7.53 2.22-6.42 0-10.75-4.53-10.75-11.3 0-8.48 5.93-20.5 23.72-20.5Zm-9.78 25.3c2.47 0 4.93-.92 7.34-2.78 3.16-4.46 5.02-8.18 5.02-11.2 0-2.96-1.73-4.57-4.7-4.57-6.6 0-12.22 7.83-12.22 13.95 0 2.96 1.73 4.6 4.56 4.6Z"/>
+</svg>
