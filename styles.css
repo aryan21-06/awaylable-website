@@ -308,7 +308,7 @@ main {
 
 .hero {
   padding-top: 70px;
-  min-height: calc(100vh - 82px);
+  padding-bottom: 0;
 }
 
 .hero-backdrop,
@@ -359,6 +359,8 @@ main {
   line-height: 1.8;
   color: var(--muted);
 }
+
+
 
 .hero-proof {
   display: grid;
@@ -415,7 +417,7 @@ main {
 
 .hero-visual {
   position: relative;
-  min-height: 700px;
+  min-height: 520px;
 }
 
 .hero-brain-map {
@@ -988,6 +990,7 @@ main {
   height: 54px;
 }
 
+
 .mini-product-card span,
 .widget-brand span,
 .widget-footer-note,
@@ -1161,6 +1164,7 @@ main {
 .solution-layout {
   grid-template-columns: 1.15fr 0.85fr;
   gap: 24px;
+  align-items: start;
 }
 
 .brain-panel {
@@ -1236,12 +1240,39 @@ main {
   overflow-wrap: anywhere;
 }
 
-.brain-center-core strong {
+.brain-center-core > span {
   display: block;
-  margin-top: 10px;
+  font-family: "Sora", sans-serif;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.brain-center-logo {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 12px;
   font-family: "Sora", sans-serif;
   font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
   line-height: 1.2;
+}
+
+.brain-center-logo .brand-text {
+  display: inline;
+  text-transform: none;
+  letter-spacing: -0.08em;
+  color: var(--text);
+}
+
+.brain-center-logo .brand-dot {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 4px;
 }
 
 .solution-points {
@@ -1582,7 +1613,7 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
   gap: 24px;
-  margin-top: 30px;
+  margin-top: 5px;
   padding: 28px;
   border-radius: var(--radius-xl);
   background: rgba(255, 255, 255, 0.1);
@@ -2237,14 +2268,21 @@ main {
   letter-spacing: 0.12em;
 }
 
+#case-study {
+  padding: 0;
+}
+
 .case-study-shell {
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   gap: 22px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .case-quote-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
   padding: 34px 32px 28px;
   background: rgba(11, 12, 18, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -2554,9 +2592,22 @@ main {
 }
 
 .atomnik-stats > div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
   padding: 16px 18px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+.atomnik-stats > div span {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+.atomnik-stats > div strong {
+  margin-top: 0;
+  justify-self: end;
+  text-align: right;
 }
 
 .atomnik-stats a,
@@ -2606,8 +2657,14 @@ main {
 
 .footer-brand {
   display: inline-flex;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 16px;
+}
+
+.footer-logo-img {
+  width: min(180px, 100%);
+  height: auto;
+  display: block;
 }
 
 .footer-intro p {
@@ -3026,4 +3083,149 @@ main {
   .hero-branch {
     padding: 16px;
   }
+}
+
+/* Custom Layout additions for UI fixes */
+.brain-hub-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.brain-hub-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visha-logo-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.visha-world-logo-img {
+  max-width: 140px;
+  height: auto;
+}
+.visha-world-notes .support-card {
+  max-width: 100%;
+}
+.brain-hub-layout {
+  align-items: start;
+}
+.brain-center-panel {
+  align-self: stretch;
+}
+.support-card-col,
+.atomnik-solution-card-col {
+  flex-direction: column;
+  align-items: flex-start !important;
+  text-align: left;
+}
+.pricing-card-col {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing-card-col-content {
+  flex-grow: 1;
+}
+.pricing-card-col-footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    backdrop-filter: none;
+    background: rgba(9, 10, 15, 0.96);
+  }
+
+  .hero-pattern {
+    mask-image: none;
+    opacity: 0.12;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .brain-hub-layout {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .brain-center-panel {
+    order: -1;
+    min-height: auto;
+    align-self: auto;
+    padding: 16px;
+  }
+
+  .brain-center-core {
+    max-width: 164px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  .visha-world-notes .support-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .brain-panel {
+    padding: 16px;
+  }
+
+  .brain-source-card,
+  .brain-center-panel {
+    min-height: auto;
+  }
+
+  .brain-hub-cards {
+    gap: 12px;
+  }
+
+  .brain-source-card {
+    padding: 16px;
+  }
+
+  .brain-center-logo {
+    font-size: 1.05rem;
+  }
+
+  .brain-center-logo .brand-dot {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 3px;
+  }
+
+  .visha-world-notes .support-card {
+    display: grid;
+    gap: 8px;
+  }
+
+  .visha-world-notes .support-card span {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .visha-world-notes .support-card strong {
+    margin-top: 0;
+    font-size: 0.88rem;
+  }
+}
+.estimated-cost-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.estimated-cost-text strong {
+  color: white;
+  font-weight: 700;
 }
