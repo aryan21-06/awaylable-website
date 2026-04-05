@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Awaylable</title>
+    <meta name="description" content="Simple, scaling pricing for Awaylable. Choose the plan that fits your business.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Awaylable</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#methodology">How it Works</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" class="btn btn-primary">Book a Demo</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Tier Table -->
+    <section id="pricing" class="pricing-section" style="padding-top: 160px; min-height: 80vh;">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Simple, Scaling Pricing</h2>
+                <p>Standard Feature: <strong>Unlimited Dashboard Users included on ALL plans.</strong></p>
+            </div>
+
+            <div class="pricing-grid" id="pricingTrack">
+                <!-- Core Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Core</h3>
+                        <div class="price">
+                            <span class="currency">₹</span><span class="amount">2,000</span><span class="period">/mo</span>
+                        </div>
+                        <p class="billing">billed yearly</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>Up to 500</strong> conversations</li>
+                        <li>Website deployment</li>
+                        <li>Unlimited dashboard users</li>
+                        <li>Basic analytics</li>
+                    </ul>
+                    <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" class="btn btn-outline">Book Demo</a>
+                </div>
+
+                <!-- Growth Plan -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Growth</h3>
+                        <div class="price">
+                            <span class="currency">₹</span><span class="amount">7,000</span><span class="period">/mo</span>
+                        </div>
+                        <p class="billing">billed yearly</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>Up to 3,000</strong> conversations</li>
+                        <li><strong>Omnichannel Included</strong></li>
+                        <li>Website, WhatsApp, Instagram</li>
+                        <li>Unlimited dashboard users</li>
+                        <li>Advanced Insights & KG Engine</li>
+                    </ul>
+                    <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" class="btn btn-primary">Book Demo</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">₹</span><span class="amount">11,000</span><span class="period">/mo</span>
+                        </div>
+                        <p class="billing">billed yearly</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>Unlimited</strong> conversations</li>
+                        <li><strong>Omnichannel Included</strong></li>
+                        <li>Priority Support</li>
+                        <li>Unlimited dashboard users</li>
+                        <li>Custom integrations</li>
+                    </ul>
+                    <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" class="btn btn-outline">Book Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive ROI Calculator Section -->
+    <section id="roi-calculator" class="calculators-section" style="background: #fff; padding: 5rem 0; border-top: 1px solid #eee;">
+        <div class="container" style="max-width: 1000px;">
+            <div class="section-title text-center" style="margin-bottom: 3rem;">
+                <h2 style="font-size: 2.2rem; color: var(--peacock-blue);">Calculate Your ROI</h2>
+                <p>See how much additional revenue Awaylable can drive for your business.</p>
+            </div>
+
+            <div class="calc-panel-wrapper">
+                <div class="calc-content-area">
+                    <div id="roi-calc" class="calc-tab-content active calc-columns">
+                        
+                        <!-- LEFT COLUMN: ROI Forms -->
+                        <div class="calc-left-col">
+                            <div class="input-group">
+                                <label for="roi-visitors">Monthly visitors</label>
+                                <input type="range" id="roi-visitors" class="form-slider secondary-slider" min="1000" max="100000" step="1000" value="25000">
+                                <span class="val-display" id="val-visit">25,000 visitors</span>
+                            </div>
+                            <div class="input-group">
+                                <label for="roi-cr">Current conversion rate</label>
+                                <input type="range" id="roi-cr" class="form-slider secondary-slider" min="0.5" max="10.0" step="0.1" value="2.4">
+                                <span class="val-display" id="val-cr">2.4%</span>
+                            </div>
+                            <div class="input-group">
+                                <label for="roi-aov">Average order value (₹)</label>
+                                <input type="range" id="roi-aov" class="form-slider secondary-slider" min="500" max="10000" step="100" value="2200">
+                                <span class="val-display" id="val-aov">₹2,200</span>
+                            </div>
+                            <div class="input-group">
+                                <label for="roi-lift">Expected conversion lift</label>
+                                <select id="roi-lift" class="form-select">
+                                    <option value="0.10">10% lift</option>
+                                    <option value="0.25" selected>25% lift</option>
+                                    <option value="0.50">50% lift</option>
+                                </select>
+                            </div>
+                        </div> <!-- End Left Col -->
+
+                        <!-- RIGHT COLUMN: Dark ROI Card -->
+                        <div class="calc-right-col">
+                            <div class="dark-result-card" id="roi-result-card">
+                                <p class="rc-label">Estimated additional revenue</p>
+                                <h2 class="rc-big-number secondary-text" id="rc-revenue">₹3,30,000</h2>
+                                
+                                <div class="rc-breakdown">
+                                    <div class="rc-row">
+                                        <span id="row-orders">Current monthly orders: 600</span>
+                                    </div>
+                                    <div class="rc-row">
+                                        <span id="row-lift">Expected conversion lift: 25%</span>
+                                    </div>
+                                    <div class="rc-row">
+                                        <span id="row-inc">Incremental monthly orders: 150</span>
+                                    </div>
+                                    <div class="rc-row solid-row">
+                                        <span id="row-total">Additional revenue at AOV ₹2,200: ₹3,30,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Right Col -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powered by Atomnik Section -->
+    <section class="atomnik-powered-block" style="background: linear-gradient(135deg, #1c1c1c, #2a2a2a); color: var(--white); padding: 5rem 0;">
+        <div class="container text-center">
+            <img src="assets/atomnik.png" alt="Atomnik Technologies" style="max-height: 80px; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+            <h2 style="color: var(--white); font-size: 2.2rem; margin-bottom: 1rem;">Powered by Atomnik Technologies</h2>
+            <p style="color: #ccc; max-width: 600px; margin: 0 auto 2rem; font-size: 1.15rem; line-height: 1.6;">
+                From automating rules-based business processes to building intelligent AI co-pilots like Awaylable, we create robust solutions that save time, cut costs, and accelerate business growth. Focus on growth, we'll handle the busywork.
+            </p>
+            <a href="https://atomnik.com" target="_blank" class="btn btn-primary">Explore Atomnik Ecosystem</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">Awaylable</div>
+                    <p>Turning complexity into clarity for your customer support and pre-sales interactions.</p>
+                </div>
+                <div class="footer-contact" id="contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:info@atomnik.com">info@atomnik.com</a></p>
+                    <p>Phone: <a href="tel:+918451850296">+91 84518 50296</a></p>
+                </div>
+                <div class="footer-made-in">
+                    <!-- Made in India motif -->
+                    <div class="motif-box">
+                        <span class="emoji">🇮🇳</span>
+                        <span>Made in India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom flex-footer-bottom">
+                <p>&copy; 2026 <a href="https://atomnik.com" target="_blank" style="color:var(--white);text-decoration:underline;">Atomnik Technologies</a>. All rights reserved.</p>
+                <div class="powered-by">
+                    <span>Powered by</span>
+                    <a href="https://atomnik.com" target="_blank">
+                        <img src="assets/atomnik.png" alt="Atomnik Technologies" class="atomnik-logo-footer">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Book Demo Button -->
+    <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" class="floating-demo-btn shadow-bounce">
+        <span class="icon">📅</span> Book Demo
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

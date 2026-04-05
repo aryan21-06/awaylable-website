@@ -1,958 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awaylable | AI sales and support across every ecommerce channel</title>
-  <meta name="description" content="Awaylable is the AI sales and support agent for ecommerce brands across website, WhatsApp, Instagram, and voice in any language. Powered by Atomnik Technologies.">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon-a.svg">
-  <link rel="apple-touch-icon" href="assets/favicon-a.svg">
+  <title>Awaylable | Instant Support & Pre-Sales AI</title>
+  <meta name="description"
+    content="Deploy a fully functional, intelligent support and pre-sales agent without writing scripts or building decision trees.">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <a class="floating-demo-cta" href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" rel="noreferrer">Book demo</a>
 
-  <nav class="navbar">
-    <div class="container nav-shell">
-      <a href="#hero" class="brandmark" aria-label="Awaylable home">
-        <span class="brand-text">awaylable</span>
-        <span class="brand-dot"></span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="nav-links" data-nav-menu>
-        <a href="#features">Features</a>
-        <a href="#use-cases">Use Cases</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#widget-demo">Demo</a>
-        <a href="#case-study">Case Studies</a>
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#"><img src="assets/awaylable-logo.png" alt="Awaylable"></a>
       </div>
-      <div class="nav-actions">
-        <a href="#calculator" class="btn btn-secondary">Estimate ROI</a>
-        <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" class="btn btn-primary" target="_blank" rel="noreferrer">Book demo</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#methodology">How it Works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" class="btn btn-primary">Book a
+          Demo</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <main>
-    <section class="hero section" id="hero">
-      <div class="hero-backdrop"></div>
-      <div class="hero-pattern"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Powered by Atomnik Technologies</div>
-          <h1>Turn every ecommerce conversation into revenue.</h1>
-          <p class="hero-lead">Awaylable is the AI sales and support agent for your website, WhatsApp, Instagram, and voice line, so shoppers get answers, recommendations, and order help instantly in any language.</p>
-          <div class="hero-proof">
-            <div class="proof-card">
-              <strong>67%</strong>
-              <span>of carts drop when product questions go unanswered</span>
-            </div>
-            <div class="proof-card">
-              <strong>85%</strong>
-              <span>expect 24/7 instant replies before they buy</span>
-            </div>
-            <div class="proof-card">
-              <strong>3x</strong>
-              <span>more revenue from personalized recommendations</span>
-            </div>
-          </div>
-          <div class="hero-cta-row">
-            <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" class="btn btn-primary btn-large" target="_blank" rel="noreferrer">Start free trial</a>
-          </div>
-          <div class="hero-trustline">
-            <span>Website widget</span>
-            <span>WhatsApp</span>
-            <span>Instagram DMs</span>
-            <span>Voice AI</span>
-          </div>
-        </div>
+  <!-- Hero Section (The Transition) -->
+  <section class="hero-section">
+    <div class="hero-mandala-watermark"></div>
+    <div class="hero-lotus-watermark"></div>
+    <div class="hero-corner hero-corner-left"></div>
+    <div class="hero-corner hero-corner-right"></div>
+    <div class="hero-divider hero-divider-top"></div>
+    <div class="hero-divider hero-divider-bottom"></div>
 
-        <div class="hero-visual">
-          <div class="hero-brain-map" id="heroBrainMap">
-            <div class="hero-branch branch-call" id="branchCall">
-              <span class="channel-label">Call</span>
-              <strong>Inbound sales and support calls answered instantly</strong>
-            </div>
-            <div class="hero-branch branch-chat" id="branchChat">
-              <span class="channel-label">Chat</span>
-              <strong>Website, WhatsApp, and social conversations on one brain</strong>
-            </div>
-            <div class="hero-brain-core" id="brainCore">
-              <div class="core-ring"></div>
-              <div class="core-ring core-ring-delayed"></div>
-              <div class="core-chip">
-                <div class="core-logo-shell">
-                  <span class="brand-text">awaylable</span><span class="brand-dot"></span>
-                </div>
-              </div>
-            </div>
-            <svg class="hero-neuron-network" id="neuronSvg" aria-hidden="true"></svg>
-            <div class="hero-branch branch-video" id="branchVideo">
-              <span class="channel-label">Video Call</span>
-              <strong>High-intent demos, consults, and assisted buying journeys</strong>
-            </div>
-          </div>
-
-
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <h1>When you're away,<br><span class="highlight">we are available.</span></h1>
+        <p class="sub-headline">Deploy a fully functional, intelligent support and pre-sales agent without writing
+          scripts or building decision trees.</p>
+        <p class="hero-description">Awaylable instantly transforms your website, documents, and historical data into an
+          autonomous 24/7 sales and customer service entity.</p>
+        <div class="hero-cta">
+          <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank"
+            class="btn btn-primary btn-large">Book a Demo</a>
         </div>
       </div>
-    </section>
 
-    <section class="proof-strip">
-      <div class="container proof-strip-shell">
-        <div class="proof-strip-copy">
-          <span class="eyebrow eyebrow-dark">Built for Indian ecommerce teams</span>
-          <h2>Designed for conversion first, support second, and channel chaos never.</h2>
+      <!-- New Omnibrain visual element -->
+      <div class="hero-omnibrain" aria-hidden="true">
+        <!-- Data Nodes -->
+        <div class="ob-card ob-card-call">
+          <span class="ob-label">CALL</span>
+          <p>Inbound sales and support calls answered instantly</p>
         </div>
-        <div class="proof-strip-grid">
-          <div>
-            <strong>Unified inbox included</strong>
-            <span>No extra seat pricing for support agents</span>
+        <div class="ob-card ob-card-chat">
+          <span class="ob-label">CHAT</span>
+          <p>Website, WhatsApp, and social conversations on one brain</p>
+        </div>
+        <div class="ob-card ob-card-video">
+          <span class="ob-label">VIDEO CALL</span>
+          <p>High-intent demos, consults, and assisted buying journeys</p>
+        </div>
+
+        <!-- Central Engine -->
+        <div class="ob-core">
+          <div class="ob-rings">
+            <div class="ob-ring r1"></div>
+            <div class="ob-ring r2"></div>
+            <div class="ob-ring r3"></div>
           </div>
-          <div>
-            <strong>No WhatsApp markup</strong>
-            <span>Competitors often layer 12 to 20% on top</span>
-          </div>
-          <div>
-            <strong>Voice AI in all languages</strong>
-            <span>Same brain, same catalog, same policies</span>
+          <div class="ob-brain-glow"></div>
+          <div class="ob-logo-pill">
+            awaylable<span class="ob-dot"></span>
           </div>
         </div>
+
+        <!-- Neural Connections -->
+        <svg class="ob-connections" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <!-- Lines connecting cards to center -->
+          <line x1="22" y1="20" x2="50" y2="50" class="ob-line" stroke-dasharray="1.5 1.5" />
+          <line x1="78" y1="20" x2="50" y2="50" class="ob-line" stroke-dasharray="1.5 1.5" />
+          <line x1="50" y1="78" x2="50" y2="50" class="ob-line" stroke-dasharray="1.5 1.5" />
+
+          <!-- Nodes attaching lines -->
+          <circle cx="22" cy="20" r="0.8" class="ob-node" />
+          <circle cx="78" cy="20" r="0.8" class="ob-node" />
+          <circle cx="50" cy="78" r="0.8" class="ob-node" />
+          <circle cx="50" cy="50" r="1.5" class="ob-node core-node" />
+        </svg>
       </div>
-    </section>
-
-    <section class="section section-light" id="problem">
-      <div class="container">
-        <div class="section-heading left-aligned">
-          <span class="eyebrow eyebrow-dark">The problem</span>
-          <h2>Missed chats quietly destroy revenue.</h2>
-          <p>When support is slow, sales disappear. When channels are fragmented, the buyer repeats themselves and your team burns time instead of converting demand.</p>
-        </div>
-        <div class="problem-grid">
-          <article class="issue-card issue-critical">
-            <div class="issue-header">
-              <span class="issue-state state-red"></span>
-              <strong>Unanswered product intent</strong>
-            </div>
-            <p class="issue-copy">Shoppers ask about stock, sizing, gifting, delivery, and budget. If those messages sit for 20 minutes, you usually lose the cart.</p>
-            <div class="issue-thread">
-              <div class="issue-message">Do you have this kurta in XL and can it reach Pune by Sunday?</div>
-              <div class="issue-message muted">Seen 34 minutes ago</div>
-            </div>
-          </article>
-          <article class="issue-card">
-            <div class="issue-header">
-              <span class="issue-state state-orange"></span>
-              <strong>Support load never sleeps</strong>
-            </div>
-            <p class="issue-copy">Returns, refunds, order tracking, and troubleshooting pile up after business hours, right when online demand spikes.</p>
-            <div class="issue-thread">
-              <div class="issue-message">My order says delivered but I have not received it.</div>
-              <div class="issue-message">Need return pickup for order AWY-4821.</div>
-            </div>
-          </article>
-          <article class="issue-card">
-            <div class="issue-header">
-              <span class="issue-state state-blue"></span>
-              <strong>Teams work without shared context</strong>
-            </div>
-            <p class="issue-copy">Your website chat, Instagram DMs, and WhatsApp all hold pieces of the customer journey, but no single system turns that into a sale.</p>
-            <div class="fragment-list">
-              <span>Website asks budget</span>
-              <span>Instagram gets image reference</span>
-              <span>WhatsApp closes payment</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="solution">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">The solution</span>
-          <h2>One AI brain. Every customer channel.</h2>
-          <p>Awaylable trains on your catalog, offers, policies, and order workflows once, then deploys the same selling intelligence across every place customers talk to you.</p>
-        </div>
-        <div class="solution-layout">
-          <div class="brain-panel">
-            <div class="brain-hub-layout">
-              <div class="brain-hub-cards">
-                <div class="brain-source-card">
-                  <span>Shopify catalog</span>
-                  <strong>Live products, prices, variants</strong>
-                </div>
-                <div class="brain-source-card">
-                  <span>Policies</span>
-                  <strong>Returns, delivery, FAQs, troubleshooting</strong>
-                </div>
-              </div>
-              <div class="brain-center-panel">
-                <div class="brain-center-core">
-                  <span>AI reasoning layer</span>
-                  <div class="brain-center-logo">
-                    <span class="brand-text">awaylable</span><span class="brand-dot"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="brain-hub-cards">
-                <div class="brain-source-card">
-                  <span>Purchase history</span>
-                  <strong>Offers, upsells, loyalty nudges</strong>
-                </div>
-                <div class="brain-source-card">
-                  <span>Support workflows</span>
-                  <strong>Refunds, order status, human escalation</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="solution-points">
-            <div class="solution-point">
-              <strong>Recommends products like an in-store associate</strong>
-              <p>Understands budget, intent, style, and use-case before serving product cards with prices and discount nudges.</p>
-            </div>
-            <div class="solution-point">
-              <strong>Handles image and voice led buying journeys</strong>
-              <p>Customers can send a reference image, voice note, or phone call and still get guided to the right SKU in the language they prefer.</p>
-            </div>
-            <div class="solution-point">
-              <strong>Automates the full ecommerce journey</strong>
-              <p>Lead capture, discovery, recommendation, conversion push, and post-sale support all happen inside one coordinated system.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="features">
-      <div class="container">
-        <div class="section-heading left-aligned">
-          <span class="eyebrow eyebrow-dark">Feature system</span>
-          <h2>Everything the buyer needs, without waiting for a human.</h2>
-          <p>Every feature section mirrors a real commerce interaction so the page feels credible to founders, operators, and growth teams reviewing the product.</p>
-        </div>
-
-        <div class="feature-story-grid" id="use-cases">
-          <article class="story-card">
-            <div class="story-copy">
-              <span class="story-kicker">01 · Personalized recommendations</span>
-              <h3>Ask. understand. recommend. convert.</h3>
-              <p>Awaylable pulls live Shopify products, understands budget and use-case, and sends visual recommendations that close with urgency and discounts.</p>
-              <ul class="story-list">
-                <li>Guides discovery using budget, gifting intent, category, and preference</li>
-                <li>Sends product cards with prices, images, and fast checkout prompts</li>
-                <li>Applies personalized discount codes to recover hesitant buyers</li>
-              </ul>
-            </div>
-            <div class="story-ui">
-              <div class="mockup-window">
-                <div class="mockup-topbar">
-                  <span>Recommendation flow</span>
-                  <strong>WhatsApp assist</strong>
-                </div>
-                <div class="mockup-body">
-                  <div class="chat-bubble incoming">Suggest festive gifts under ₹800 for my sister.</div>
-                  <div class="chat-bubble outgoing">Absolutely. Do you want something useful, fashion-led, or skincare based?</div>
-                  <div class="product-row">
-                    <div class="product-card-small">
-                      <div class="product-thumb product-thumb-a"></div>
-                      <strong>Leather wallet gift box</strong>
-                      <span>₹749</span>
-                    </div>
-                    <div class="product-card-small">
-                      <div class="product-thumb product-thumb-b"></div>
-                      <strong>Rose gold watch set</strong>
-                      <span>₹799</span>
-                    </div>
-                  </div>
-                  <div class="offer-banner">Coupon FESTIVE10 applied. Offer expires in 20 minutes.</div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="story-card reverse">
-            <div class="story-copy">
-              <span class="story-kicker">02 · Image + voice search</span>
-              <h3>See it. say it. find it.</h3>
-              <p>Shoppers browse naturally. Awaylable maps images and voice inputs to matching catalog items, then continues the same journey on the same channel.</p>
-              <ul class="story-list">
-                <li>Image sent on Instagram or WhatsApp returns visually similar products</li>
-                <li>Voice notes and calls supported in any language your customers use</li>
-                <li>Availability, pricing, and recommendations delivered immediately</li>
-              </ul>
-            </div>
-            <div class="story-ui">
-              <div class="mockup-window alt-surface">
-                <div class="mockup-topbar">
-                  <span>Visual discovery</span>
-                  <strong>Instagram DM</strong>
-                </div>
-                <div class="mockup-body">
-                  <div class="image-drop">
-                    <div class="image-frame">
-                      <div class="image-reference"></div>
-                    </div>
-                    <div>
-                      <strong>Customer sent a reference image</strong>
-                      <span>Matching against live catalog</span>
-                    </div>
-                  </div>
-                  <div class="match-grid">
-                    <div class="match-card">
-                      <div class="match-thumb match-thumb-a"></div>
-                      <strong>Closest match</strong>
-                    </div>
-                    <div class="match-card">
-                      <div class="match-thumb match-thumb-b"></div>
-                      <strong>Budget option</strong>
-                    </div>
-                    <div class="match-card">
-                      <div class="match-thumb match-thumb-c"></div>
-                      <strong>Premium option</strong>
-                    </div>
-                  </div>
-                  <div class="voice-chip">
-                    <span class="voice-indicator"></span>
-                    Voice response ready in 1.2s
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="story-card">
-            <div class="story-copy">
-              <span class="story-kicker">03 · Full ecommerce journey automation</span>
-              <h3>Lead capture to post-sale help in one flow.</h3>
-              <p>Awaylable does not stop at FAQ answers. It qualifies visitors, nudges purchases, and keeps supporting the customer after checkout.</p>
-              <ul class="story-list">
-                <li>Lead capture and qualification before shoppers bounce</li>
-                <li>Checkout nudges, payment reminders, and conversion prompts</li>
-                <li>Order tracking, care tips, returns, and refund assistance</li>
-              </ul>
-            </div>
-            <div class="story-ui">
-              <div class="journey-timeline">
-                <div class="journey-step active">
-                  <span>Lead capture</span>
-                  <strong>Collects phone and intent</strong>
-                </div>
-                <div class="journey-step active">
-                  <span>Discovery</span>
-                  <strong>Understands preference and budget</strong>
-                </div>
-                <div class="journey-step active">
-                  <span>Recommend</span>
-                  <strong>Serves product cards from Shopify</strong>
-                </div>
-                <div class="journey-step active">
-                  <span>Convert</span>
-                  <strong>Triggers discounts and checkout nudges</strong>
-                </div>
-                <div class="journey-step">
-                  <span>Post-sale</span>
-                  <strong>Tracks order, returns, and care help</strong>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="story-card reverse">
-            <div class="story-copy">
-              <span class="story-kicker">04 · Smart offers + AI support</span>
-              <h3>Upsell when it helps. escalate when it matters.</h3>
-              <p>Customers get thoughtful cross-sells, contextual discounts, and reliable support answers without feeling pushed through a script.</p>
-              <ul class="story-list">
-                <li>Auto applies discount codes based on hesitation or order value</li>
-                <li>Uses purchase history to recommend complementary products</li>
-                <li>Escalates difficult support cases with full conversation context</li>
-              </ul>
-            </div>
-            <div class="story-ui">
-              <div class="support-stack">
-                <div class="support-card support-card-col">
-                  <span>Smart offer</span>
-                  <strong>Add matching case for 15% off</strong>
-                </div>
-                <div class="support-card support-card-col">
-                  <span>Customer support</span>
-                  <strong>Return pickup scheduled for tomorrow</strong>
-                </div>
-                <div class="support-card accent support-card-col">
-                  <span>Human handoff</span>
-                  <strong>Escalated with order and issue summary attached</strong>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- widget demo commented out
-    <section class="section section-dark" id="widget-demo">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Interactive widget concept</span>
-          <h2>One demo. Three channels. Real buyer moments.</h2>
-          <p>Switch between WhatsApp, Instagram, and website chat to show how the same Awaylable brain adapts to each touchpoint while keeping one unified conversation history.</p>
-        </div>
-        <div class="demo-layout">
-          <div class="widget-shell">
-            <div class="widget-frame">
-              <div class="widget-toolbar">
-                <div class="widget-brand">
-                  <div class="widget-brand-mark"></div>
-                  <div>
-                    <strong>AWAYLABLE AI</strong>
-                    <span>powered by atomnik</span>
-                  </div>
-                </div>
-                <div class="widget-toolbar-actions">
-                  <span class="toolbar-dot"></span>
-                  <span class="toolbar-dot"></span>
-                  <span class="toolbar-close"></span>
-                </div>
-              </div>
-              <div class="widget-tab-row" role="tablist" aria-label="Chat channels">
-                <button class="widget-tab active" type="button" data-channel-tab="whatsapp">WhatsApp</button>
-                <button class="widget-tab" type="button" data-channel-tab="instagram">Instagram</button>
-                <button class="widget-tab" type="button" data-channel-tab="website">Website</button>
-              </div>
-              <div class="widget-chat" id="channelConversation"></div>
-              <div class="widget-input">
-                <button class="icon-button" type="button" aria-label="Attach file">
-                  <span class="icon-clip"></span>
-                </button>
-                <input id="channelInput" type="text" placeholder="Ask about products, orders, or offers">
-                <button class="send-button" type="button" id="channelSend">Send</button>
-              </div>
-              <div class="widget-footer-note">Powered by atomnik</div>
-            </div>
-          </div>
-
-          <div class="demo-sidebar">
-            <div class="demo-brief">
-              <span class="eyebrow eyebrow-dark">What this section proves</span>
-              <h3>Unified inbox, channel-native behavior.</h3>
-              <p id="channelTitle">WhatsApp closes the sale with product cards and discount codes.</p>
-            </div>
-            <div class="demo-benefits" id="channelBenefits"></div>
-            <div class="demo-metrics-panel">
-              <div>
-                <span>Unified inbox</span>
-                <strong>Included in every paid plan</strong>
-              </div>
-              <div>
-                <span>No per-agent pricing</span>
-                <strong>Scale without seat anxiety</strong>
-              </div>
-              <div>
-                <span>Voice + chat</span>
-                <strong>One shared context layer</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-
-    <section class="section section-light" id="before-after">
-      <div class="container">
-        <div class="section-heading left-aligned">
-          <span class="eyebrow eyebrow-dark">Before vs after</span>
-          <h2>What changes when Awaylable runs the front line.</h2>
-        </div>
-        <div class="comparison-split">
-          <div class="comparison-card">
-            <span class="comparison-label">Before</span>
-            <h3>Manual support and disconnected sales follow-up</h3>
-            <ul class="comparison-list">
-              <li>Missed WhatsApp leads outside business hours</li>
-              <li>Instagram DMs handled separately from website chat</li>
-              <li>Support staff repeat product and policy answers all day</li>
-              <li>Upsells depend on one strong salesperson being online</li>
-            </ul>
-          </div>
-          <div class="comparison-card comparison-card-accent">
-            <span class="comparison-label">After</span>
-            <h3>Always-on AI revenue desk across all channels</h3>
-            <ul class="comparison-list">
-              <li>Instant replies, guided discovery, and live product selling</li>
-              <li>Single inbox with context across web, social, and voice</li>
-              <li>Automated order support, refunds, and troubleshooting</li>
-              <li>Upsells, coupons, and recovery nudges triggered automatically</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-accent" id="case-study">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Case study</span>
-          <h2>Visha World is already proving the model.</h2>
-          <p>Mumbai-based electronics retailer with 1,000+ SKUs on Shopify replaced a single-person WhatsApp bottleneck with an always-on conversational sales layer.</p>
-        </div>
-        <div class="case-study-shell">
-          <div class="case-quote-card">
-            <p class="quote-mark">“</p>
-            <blockquote>Awaylable helps us answer product questions, recommend alternatives, and support customers around the clock without waiting for one team member to respond manually.</blockquote>
-            <div class="case-meta visha-logo-meta">
-              <a href="https://vishaworld.com" target="_blank" rel="noreferrer" aria-label="Visit Visha World">
-                <img src="assets/visha-world-logo.png" alt="Visha World" class="visha-world-logo-img">
-              </a>
-            </div>
-          </div>
-          <div class="case-metric-grid">
-            <div class="case-metric-card">
-              <span>Monthly sessions</span>
-              <strong>1.5L+</strong>
-            </div>
-            <div class="case-metric-card">
-              <span>Revenue uplift</span>
-              <strong>₹1.43L</strong>
-            </div>
-            <div class="case-metric-card">
-              <span>Support coverage</span>
-              <strong>24/7</strong>
-            </div>
-            <div class="case-metric-card">
-              <span>Operational outcome</span>
-              <strong>Zero manual WhatsApp dependency</strong>
-            </div>
-          </div>
-        </div>
-        <div class="visha-world-panel">
-          <div class="visha-world-copy">
-            <span class="eyebrow">Live example</span>
-            <h3>Try Ask VISHA in the wild.</h3>
-            <p>See how the assistant handles real product discovery and support for Visha World customers, then compare that experience to the Awaylable rollout story on this page.</p>
-            <div class="visha-world-actions">
-              <a href="https://vishaworld.com" class="ask-visha-pill" target="_blank" rel="noreferrer" aria-label="Try Ask VISHA on Visha World">
-                <span class="ask-visha-mark" aria-hidden="true">
-                  <span></span>
-                </span>
-                <span>Ask VISHA</span>
-              </a>
-              <a href="https://vishaworld.com" class="btn btn-secondary" target="_blank" rel="noreferrer">Visit vishaworld.com</a>
-            </div>
-          </div>
-          <div class="visha-world-notes">
-            <div class="support-card">
-              <span>Why it matters</span>
-              <strong>Buyers can ask technical product questions without waiting for a person to be online.</strong>
-            </div>
-            <div class="support-card accent">
-              <span>What to watch</span>
-              <strong>Multilingual responses, product recommendations, and real support context inside the same assistant.</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="product-showcase">
-      <div class="container">
-        <div class="section-heading left-aligned">
-          <span class="eyebrow eyebrow-dark">Inside the product</span>
-          <h2>Train the business brain and reply naturally in every language.</h2>
-          <p>The screens below show the operating layer behind Awaylable: unified business context for training and multilingual customer responses in a production-like chat experience.</p>
-        </div>
-        <div class="showcase-stack">
-          <article class="showcase-row">
-            <div class="showcase-copy">
-              <span class="story-kicker">01 · Unified business context</span>
-              <h3>Train one assistant on your website, documents, and operating knowledge.</h3>
-              <p>Instead of wiring together fragmented prompts, teams can crawl live URLs, add text, and upload internal material into a single knowledge base that powers sales and support answers.</p>
-              <ul class="story-list">
-                <li>Centralizes product, policy, and brand information in one training flow</li>
-                <li>Makes updates easier when pricing, FAQs, or catalog pages change</li>
-                <li>Creates a cleaner path from internal knowledge to customer-ready replies</li>
-              </ul>
-            </div>
-            <div class="showcase-visual">
-              <img src="assets/unified-context-chat.png" alt="Visha AI chat widget showing product recommendations and buyer interaction">
-            </div>
-          </article>
-
-          <article class="showcase-row hindi-chat-row">
-            <div class="showcase-copy">
-              <span class="story-kicker">02 · Multilingual customer assistance</span>
-              <h3>Answer product questions naturally in the language customers already use.</h3>
-              <p>The assistant can understand multilingual requests and return product-specific answers, recommendations, and pricing details without losing commerce context.</p>
-              <ul class="story-list">
-                <li>Supports real product lookup from customer messages and images</li>
-                <li>Responds clearly in the customer's language while keeping item names and price details clear</li>
-                <li>Feels like a guided shopping interaction, not a generic bot reply</li>
-              </ul>
-            </div>
-            <div class="showcase-visual narrow">
-              <img src="assets/visha-insights-dashboard.png" alt="Chat interface showing VISHA AI answering a product question in the customer's language with a recommended soldering iron">
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="pricing">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Pricing</span>
-          <h2>Subscription pricing that matches growth, not headcount.</h2>
-          <p>Choose the plan that fits your monthly conversation volume. Annual billing saves 20%, and the unified inbox is included without per-agent seat charges.</p>
-        </div>
-        <div class="pricing-callouts">
-          <span>No per-agent seat charges</span>
-          <span>No WhatsApp markup</span>
-          <span>Unified inbox included</span>
-          <span>Annual discount 20%</span>
-        </div>
-        <div class="pricing-grid">
-          <article class="pricing-card plan-trial pricing-card-col">
-            <div class="pricing-card-col-content">
-              <div class="plan-chip">For evaluation</div>
-              <h3>Free Trial</h3>
-              <div class="plan-price">₹0 <span>for 14 days</span></div>
-              <p>Test the core experience before rollout.</p>
-              <ul class="plan-features">
-                <li>50 conversations included</li>
-                <li>Website chat experience</li>
-                <li>Fast setup for demos and pilots</li>
-              </ul>
-            </div>
-            <div class="pricing-card-col-footer">
-              <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" class="btn btn-secondary btn-block" target="_blank" rel="noreferrer">Start trial</a>
-            </div>
-          </article>
-
-          <article class="pricing-card pricing-card-col">
-            <div class="pricing-card-col-content">
-              <div class="plan-chip">Starter</div>
-              <h3>Starter</h3>
-              <div class="plan-price" data-plan-price="starter">₹1,999 <span>/month</span></div>
-              <p>For brands starting with web conversations.</p>
-              <ul class="plan-features">
-                <li>500 conversations included</li>
-                <li>Website only</li>
-                <li>WhatsApp add-on: ₹1,000/month</li>
-                <li>Overage: ₹1.20 per conversation</li>
-              </ul>
-            </div>
-            <div class="pricing-card-col-footer">
-              <div class="estimated-cost-text">Estimated cost: <strong id="pricingStarterEst">₹1,999/mo</strong></div>
-              <a href="#calculator" class="btn btn-secondary btn-block">Estimate cost</a>
-              <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" class="btn btn-primary btn-block" target="_blank" rel="noreferrer">Book demo</a>
-            </div>
-          </article>
-
-          <article class="pricing-card pricing-card-featured pricing-card-col">
-            <div class="pricing-card-col-content">
-              <div class="plan-chip">Most popular</div>
-              <h3>Growth</h3>
-              <div class="plan-price" data-plan-price="growth">₹6,999 <span>/month</span></div>
-              <p>For fast-growing brands selling on every customer channel.</p>
-              <ul class="plan-features">
-                <li>3,000 conversations included</li>
-                <li>All channels: WhatsApp, Instagram, website</li>
-                <li>Shopify integration included</li>
-                <li>Overage: ₹0.80 per conversation</li>
-              </ul>
-            </div>
-            <div class="pricing-card-col-footer">
-              <div class="estimated-cost-text">Estimated cost: <strong id="pricingGrowthEst">₹6,999/mo</strong></div>
-              <a href="#calculator" class="btn btn-secondary btn-block">Estimate cost</a>
-              <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" class="btn btn-primary btn-block" target="_blank" rel="noreferrer">Book demo</a>
-            </div>
-          </article>
-
-          <article class="pricing-card pricing-card-col">
-            <div class="pricing-card-col-content">
-              <div class="plan-chip">Advanced</div>
-              <h3>Pro</h3>
-              <div class="plan-price" data-plan-price="pro">₹13,999 <span>/month</span></div>
-              <p>For larger support operations adding voice automation.</p>
-              <ul class="plan-features">
-                <li>8,000 conversations included</li>
-                <li>Voice AI included</li>
-                <li>500 voice minutes included</li>
-                <li>Overage: ₹0.65 per conversation</li>
-                <li>Extra voice minutes: ₹4/min</li>
-              </ul>
-            </div>
-            <div class="pricing-card-col-footer">
-              <div class="estimated-cost-text">Estimated cost: <strong id="pricingProEst">₹13,999/mo</strong></div>
-              <a href="#calculator" class="btn btn-secondary btn-block">Estimate cost</a>
-              <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" class="btn btn-primary btn-block" target="_blank" rel="noreferrer">Book demo</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="calculator">
-      <div class="container">
-        <div class="section-heading left-aligned">
-          <span class="eyebrow eyebrow-dark">Calculator</span>
-          <h2>Show cost discipline or revenue upside, depending on the room.</h2>
-          <p>This section is built for demos with founders and senior stakeholders. It lets you pitch Awaylable either as a predictable software cost or as a conversion growth engine.</p>
-        </div>
-        <div class="calculator-shell">
-          <div class="calculator-tabs" role="tablist" aria-label="Calculator modes">
-            <button class="calculator-tab active" type="button" data-calculator-tab="cost">Cost calculator</button>
-            <button class="calculator-tab" type="button" data-calculator-tab="roi">ROI calculator</button>
-          </div>
-          <div class="calculator-panel active" data-calculator-panel="cost">
-            <div class="calculator-grid">
-              <div class="calculator-inputs">
-                <label>
-                  Monthly conversations
-                  <input id="conversationRange" type="range" min="100" max="12000" step="100" value="3200">
-                  <span id="conversationValue" class="field-value">3,200 conversations</span>
-                </label>
-                <label>
-                  Plan
-                  <select id="planSelect">
-                    <option value="starter">Starter</option>
-                    <option value="growth" selected>Growth</option>
-                    <option value="pro">Pro</option>
-                  </select>
-                </label>
-                <label class="toggle-field">
-                  <input id="annualBilling" type="checkbox">
-                  <span>Annual billing discount applied</span>
-                </label>
-                <label class="toggle-field">
-                  <input id="starterWhatsAppAddon" type="checkbox">
-                  <span>Add WhatsApp add-on for Starter</span>
-                </label>
-                <label>
-                  Extra voice minutes
-                  <input id="voiceMinutes" type="range" min="0" max="800" step="20" value="120">
-                  <span id="voiceMinutesValue" class="field-value">120 extra minutes</span>
-                </label>
-              </div>
-              <div class="calculator-result">
-                <span class="result-kicker">Estimated monthly cost</span>
-                <h3 id="costTotal">₹7,159</h3>
-                <div class="result-breakdown" id="costBreakdown"></div>
-              </div>
-            </div>
-          </div>
-          <div class="calculator-panel" data-calculator-panel="roi">
-            <div class="calculator-grid">
-              <div class="calculator-inputs">
-                <label>
-                  Monthly visitors
-                  <input id="visitorsRange" type="range" min="1000" max="150000" step="1000" value="25000">
-                  <span id="visitorsValue" class="field-value">25,000 visitors</span>
-                </label>
-                <label>
-                  Current conversion rate
-                  <input id="conversionRange" type="range" min="0.5" max="8" step="0.1" value="2.4">
-                  <span id="conversionValue" class="field-value">2.4%</span>
-                </label>
-                <label>
-                  Average order value
-                  <input id="aovRange" type="range" min="400" max="12000" step="100" value="2200">
-                  <span id="aovValue" class="field-value">₹2,200</span>
-                </label>
-                <label>
-                  Expected conversion lift
-                  <select id="liftSelect">
-                    <option value="0.2">20% lift</option>
-                    <option value="0.25" selected>25% lift</option>
-                    <option value="0.3">30% lift</option>
-                  </select>
-                </label>
-              </div>
-              <div class="calculator-result">
-                <span class="result-kicker">Estimated additional revenue</span>
-                <h3 id="roiTotal">₹3,30,000</h3>
-                <div class="result-breakdown" id="roiBreakdown"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="comparison">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Competitor comparison</span>
-          <h2>Why Awaylable wins the commercial conversation.</h2>
-          <p>Position it as a single AI commerce system rather than another support widget with channel add-ons and hidden operational costs.</p>
-        </div>
-        <div class="comparison-table-shell">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Capability</th>
-                <th>Awaylable</th>
-                <th>Typical support tool</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>WhatsApp markup</td>
-                <td>None</td>
-                <td>Often 12 to 20%</td>
-              </tr>
-              <tr>
-                <td>Channels in one AI</td>
-                <td>Website, Instagram, WhatsApp, voice</td>
-                <td>Usually chat first, channels added separately</td>
-              </tr>
-              <tr>
-                <td>Multilingual voice AI</td>
-                <td>Included on Pro</td>
-                <td>Rare or external integration</td>
-              </tr>
-              <tr>
-                <td>Seat pricing</td>
-                <td>No per-agent cost</td>
-                <td>Common on support platforms</td>
-              </tr>
-              <tr>
-                <td>Commerce focus</td>
-                <td>Recommendations, offers, conversion nudges</td>
-                <td>Mostly FAQ and ticketing</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="integrations">
-      <div class="container">
-        <div class="section-heading left-aligned">
-          <span class="eyebrow eyebrow-dark">Integrations and trust</span>
-          <h2>Fits the tools ecommerce teams already run.</h2>
-        </div>
-        <div class="integration-row">
-          <div class="integration-pill">Shopify</div>
-          <div class="integration-pill">WhatsApp Business</div>
-          <div class="integration-pill">Instagram DMs</div>
-          <div class="integration-pill">Website widget</div>
-          <div class="integration-pill">Voice AI</div>
-          <div class="integration-pill">Unified inbox</div>
-        </div>
-        <div class="trust-grid">
-          <div class="trust-card">
-            <strong>Live in days, not months</strong>
-            <p>Designed for teams that need a boardroom-ready demo and a production rollout path without rebuilding operations.</p>
-          </div>
-          <div class="trust-card">
-            <strong>Human handoff built in</strong>
-            <p>Awaylable knows when to escalate and passes full context so your team does not restart the conversation.</p>
-          </div>
-          <div class="trust-card">
-            <strong>Sales and support in one system</strong>
-            <p>It helps buyers discover products, close faster, and get support later from the exact same AI context layer.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark atomnik-section" id="atomnik">
-      <div class="container atomnik-layout">
-        <div class="atomnik-copy">
-          <span class="eyebrow">Powered by Atomnik</span>
-          <h2>The team behind the automation stack.</h2>
-          <p>Awaylable is not a disconnected experiment. It comes from Atomnik Technologies, which builds automation systems, AI copilots, multilingual voice assistants, and custom operational tooling for Indian businesses.</p>
-          <div class="atomnik-solution-grid">
-            <div class="atomnik-solution-card atomnik-solution-card-col">
-              <strong>Business workflow automation</strong>
-              <p>Automates repetitive internal processes so customer-facing AI does not stop at messaging.</p>
-            </div>
-            <div class="atomnik-solution-card atomnik-solution-card-col">
-              <strong>Voice assistants and chatbots</strong>
-              <p>Deploys always-on support and sales experiences across web, social, and phone.</p>
-            </div>
-            <div class="atomnik-solution-card atomnik-solution-card-col">
-              <strong>Custom AI deployments</strong>
-              <p>Connects LLM systems to your stack, from CRMs and ERPs to reporting and knowledge workflows.</p>
-            </div>
-          </div>
-        </div>
-        <div class="atomnik-brand-panel">
-          <div class="atomnik-logo-wrap">
-            <img src="assets/atomnik.png" alt="Atomnik Technologies logo">
-          </div>
-          <div class="atomnik-stats">
-            <div>
-              <span>Focus</span>
-              <strong>AI copilots + automation</strong>
-            </div>
-            <div>
-              <span>Approach</span>
-              <strong>Business outcomes over novelty</strong>
-            </div>
-            <div>
-              <span>Contact</span>
-              <strong><a href="mailto:info@atomnik.com">info@atomnik.com</a> · <a href="https://www.atomnik.com/" target="_blank" rel="noreferrer">atomnik.com</a></strong>
-            </div>
-            <div>
-              <span>Phone</span>
-              <strong><a href="tel:+918451850296">+91 84518 50296</a></strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light final-cta" id="final-cta">
-      <div class="container final-cta-shell">
-        <span class="eyebrow eyebrow-dark">Ready to scale support and sales</span>
-        <h2>Launch the AI revenue desk your ecommerce brand should already have.</h2>
-        <p>Show this demo to stakeholders, model the upside, then move into a live pilot with Atomnik.</p>
-        <div class="hero-cta-row centered">
-          <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" class="btn btn-primary btn-large" target="_blank" rel="noreferrer">Book a demo</a>
-          <a href="https://www.atomnik.com/" class="btn btn-secondary btn-large">Talk to Atomnik</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-shell">
-      <div class="footer-intro">
-        <a href="#hero" class="brandmark footer-brand" aria-label="Awaylable home">
-          <img src="assets/awaylable-logo.png" alt="Awaylable" class="footer-logo-img">
-        </a>
-        <p>AI-powered ecommerce sales and support across website, WhatsApp, Instagram, and voice in any language.</p>
-      </div>
-      <nav class="footer-links" aria-label="Product">
-        <strong>Product</strong>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#widget-demo">Demo</a>
-      </nav>
-      <nav class="footer-links" aria-label="Company">
-        <strong>Company</strong>
-        <a href="#atomnik">Powered by Atomnik</a>
-        <a href="https://www.atomnik.com/">atomnik.com</a>
-        <a href="mailto:info@atomnik.com">info@atomnik.com</a>
-        <a href="tel:+918451850296">+91 84518 50296</a>
-      </nav>
     </div>
-    <div class="container footer-meta">
-      <span>© 2026 Awaylable by Atomnik Technologies</span>
-      <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank" rel="noreferrer">Book a demo</a>
+  </section>
+
+  <!-- Industry Problem & Solutions -->
+  <section class="industry-solutions-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Tailored For Your Industry</h2>
+        <div class="indian-divider"></div>
+        <p>Turn industry-specific bottlenecks into automated precision.</p>
+      </div>
+
+      <div class="industry-tabs-container">
+        <div class="industry-tabs">
+          <button class="ind-tab-btn active" data-tab="ind-ecommerce">E-Commerce</button>
+          <button class="ind-tab-btn" data-tab="ind-education">Education</button>
+          <button class="ind-tab-btn" data-tab="ind-travel">Travel</button>
+          <button class="ind-tab-btn" data-tab="ind-hr">HR</button>
+          <button class="ind-tab-btn" data-tab="ind-it">IT</button>
+          <button class="ind-tab-btn" data-tab="ind-more">And More...</button>
+        </div>
+
+        <div class="industry-content-area">
+          <!-- E-Commerce -->
+          <div class="ind-pane active" id="tab-ind-ecommerce">
+            <div class="ind-split">
+              <div class="ind-problem-box">
+                <div class="ind-badge problem-badge">The Problem</div>
+                <h3>Abandoned Carts & Lost Sales at Night</h3>
+                <p>Customers have urgent questions regarding sizing, variants, shipping, or returns when your human
+                  agents are offline. Consequently, doubts cause drop-offs.</p>
+                <h4>Losses:</h4>
+                <ul>
+                  <li>Drop in conversion rates.</li>
+                  <li>Increased cart abandonment.</li>
+                  <li>Customer frustration due to delayed responses.</li>
+                </ul>
+              </div>
+              <div class="ind-solution-box">
+                <div class="ind-badge solution-badge">Our Solution</div>
+                <h3>24/7 Contextual Buying Assistant</h3>
+                <p>Awaylable instantly syncs with your product catalogs and shipping policies to provide precise,
+                  on-the-spot answers that nudge buyers toward checkout.</p>
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Higher sales conversions anytime.</li>
+                  <li>Zero delays in answering fundamental queries.</li>
+                  <li>Automated cross-selling and up-selling recommendations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="ind-pane" id="tab-ind-education">
+            <div class="ind-split">
+              <div class="ind-problem-box">
+                <div class="ind-badge problem-badge">The Problem</div>
+                <h3>Overwhelmed Educational Support</h3>
+                <p>Educational institutions face constant pressure from repetitive queries regarding courses, schedules,
+                  campus life, and administrative processes that drain staff resources.</p>
+                <h4>Losses:</h4>
+                <ul>
+                  <li>Strained student support and administrative staff.</li>
+                  <li>Delayed response to critical academic and campus queries.</li>
+                  <li>Decreased student satisfaction and engagement.</li>
+                </ul>
+              </div>
+              <div class="ind-solution-box">
+                <div class="ind-badge solution-badge">Our Solution</div>
+                <h3>24/7 Intelligent Campus Assistant</h3>
+                <p>Trained on your institutional knowledge base, Awaylable provides instant, accurate support for
+                  students, faculty, and prospects across all departments.</p>
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Instant support for academic and administrative queries.</li>
+                  <li>Drastically reduced burden on support staff.</li>
+                  <li>Enhanced student and faculty experience with 24/7 availability.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Travel -->
+          <div class="ind-pane" id="tab-ind-travel">
+            <div class="ind-split">
+              <div class="ind-problem-box">
+                <div class="ind-badge problem-badge">The Problem</div>
+                <h3>Complex Post-Booking Queries</h3>
+                <p>Travelers require constant support dealing with ticket modifications, baggage policies, visa
+                  guidance, and emergency cancellations.</p>
+                <h4>Losses:</h4>
+                <ul>
+                  <li>Disjointed customer service loops.</li>
+                  <li>High support overhead and stressed contact centers.</li>
+                  <li>Damaged brand reputation due to poor crisis management.</li>
+                </ul>
+              </div>
+              <div class="ind-solution-box">
+                <div class="ind-badge solution-badge">Our Solution</div>
+                <h3>Intelligent Journey Concierge</h3>
+                <p>Awaylable uses your complex policy documents to give crystal clear step-by-step guidance, retrieving
+                  real-time data to alleviate traveler anxiety instantly.</p>
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Lower handling time per ticket.</li>
+                  <li>Instant self-serve resolution for policy questions.</li>
+                  <li>Increased CSAT scores globally.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HR -->
+          <div class="ind-pane" id="tab-ind-hr">
+            <div class="ind-split">
+              <div class="ind-problem-box">
+                <div class="ind-badge problem-badge">The Problem</div>
+                <h3>Endless Internal Policy Questions</h3>
+                <p>HR departments spend disproportionate amounts of time clarifying leave balances, tax declarations,
+                  insurance benefits, and onboarding documentation.</p>
+                <h4>Losses:</h4>
+                <ul>
+                  <li>Reduced HR productivity.</li>
+                  <li>Employee dissatisfaction due to friction in getting internal info.</li>
+                  <li>Delays in finalizing essential paperwork.</li>
+                </ul>
+              </div>
+              <div class="ind-solution-box">
+                <div class="ind-badge solution-badge">Our Solution</div>
+                <h3>Automated Employee Helpdesk</h3>
+                <p>Ingesting all HR manuals and company policies, Awaylable becomes an instant internal copilot for
+                  employees without needing unstructured search.</p>
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Empower HR groups to focus on talent strategy.</li>
+                  <li>Instant, accurate responses to employees.</li>
+                  <li>Standardized, unbiased answers compliant with company regulations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- IT -->
+          <div class="ind-pane" id="tab-ind-it">
+            <div class="ind-split">
+              <div class="ind-problem-box">
+                <div class="ind-badge problem-badge">The Problem</div>
+                <h3>L1 Support Ticket Congestion</h3>
+                <p>IT helpdesks are typically bottlenecked dealing with password resets, VPN connection issues, software
+                  access requests, and printer configurations.</p>
+                <h4>Losses:</h4>
+                <ul>
+                  <li>Bloated ticket queues delaying critical L3 issues.</li>
+                  <li>High operational expenditure on level 1 helpdesk staff.</li>
+                  <li>Significant loss of total workforce productivity hours.</li>
+                </ul>
+              </div>
+              <div class="ind-solution-box">
+                <div class="ind-badge solution-badge">Our Solution</div>
+                <h3>Intelligent L1 Triage Copilot</h3>
+                <p>Awaylable acts as the first line of defense, using runbooks to guide users through structured
+                  troubleshooting before ever creating an IT ticket.</p>
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Deflect up to 60% of mundane support tickets.</li>
+                  <li>Accelerated resolution times.</li>
+                  <li>Free up senior IT engineering resources.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- And More -->
+          <div class="ind-pane" id="tab-ind-more">
+            <div class="ind-split">
+              <div class="ind-problem-box">
+                <div class="ind-badge problem-badge">The Problem</div>
+                <h3>Wasting Resources on Repetitive Enquiries</h3>
+                <p>Regardless of your business, a significant percentage of incoming inquiries are monotonous and
+                  repetitive, tying up your highly paid human talent and stifling growth dynamics.</p>
+                <h4>Losses:</h4>
+                <ul>
+                  <li>High operational expenditure on basic support.</li>
+                  <li>Inability to scale customer acquisition gracefully.</li>
+                  <li>Customer abandonment due to off-hours delays.</li>
+                </ul>
+              </div>
+              <div class="ind-solution-box">
+                <div class="ind-badge solution-badge">Our Solution</div>
+                <h3>Your Universal AI Copilot</h3>
+                <p>Awaylable fits effortlessly into any business context. It reads your unstructured data, instantly
+                  turning scattered knowledge into an intelligent conversational layer.</p>
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Instant ROI by deflecting up to 70% of routine tickets.</li>
+                  <li>Focus human talent on high-value closing and relations.</li>
+                  <li>Consistent, error-free brand representation 24/7.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Methodology (Zero Setup) -->
+  <section id="methodology" class="methodology-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2 class="section-heading">Zero Setup.</h2>
+        <div class="indian-divider indian-divider-lattice"></div>
+        <p class="tagline">"Your existing website is the intelligence."</p>
+      </div>
+
+      <div class="steps-timeline">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-info">
+            <div class="step-number">01</div>
+            <h3>Point & Click</h3>
+            <p>Simply paste your website URL or upload your FAQ documents. No coding required.</p>
+          </div>
+          <div class="step-visual">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <img src="assets/1ss.png" alt="Upload Sources"
+                style="width: 100%; display: block; border-radius: 0 0 10px 10px;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card reverse">
+          <div class="step-info">
+            <div class="step-number">02</div>
+            <h3>Auto-Ingestion</h3>
+            <p>The AI crawler reads, structures, and learns your content automatically in the background.</p>
+          </div>
+          <div class="step-visual">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <img src="assets/2ss.png" alt="Knowledge Sources"
+                style="width: 100%; display: block; border-radius: 0 0 10px 10px;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-info">
+            <div class="step-number">03</div>
+            <h3>Ready to Chat</h3>
+            <p>Deploy in minutes with no manual flows. Your agent instantly understands your business context.</p>
+          </div>
+          <div class="step-visual">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <img src="assets/3ss.png" alt="Chat Widget Example"
+                style="width: 100%; display: block; border-radius: 0 0 10px 10px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Pillars -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Intelligent by Design</h2>
+        <div class="indian-divider indian-divider-lattice"></div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-mark">01</div>
+          <h3>One Brain, Every Channel</h3>
+          <p>Deploy a single AI source of truth across your Website, WhatsApp, and Instagram effortlessly.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-mark">02</div>
+          <h3>Contextual History</h3>
+          <p>Conversation history follows the customer across channels perfectly, keeping context alive.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-mark">03</div>
+          <h3>Native Multilingual</h3>
+          <p>Automatically detects and natively responds in English, Hindi, and other regional languages.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-mark">04</div>
+          <h3>Configurable Tone</h3>
+          <p>Calibrate your agent's personality to be Formal, Friendly, Professional, or Warm.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-mark">05</div>
+          <h3>Seamless Human Handoff</h3>
+          <p>Intelligently escalates complex or sensitive issues to live human agents with full conversation context.
+          </p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-mark">06</div>
+          <h3>Always-On Lead Capture</h3>
+          <p>Subtly and naturally captures names, emails, and phone numbers during standard support dialogues.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-mark">07</div>
+          <h3>Instant Deployment</h3>
+          <p>No coding, no flowcharts, no long setup times. Point Awaylable to your website and go live immediately.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-mark">08</div>
+          <h3>Knowledge Gap Discovery</h3>
+          <p>Automatically flags questions your customers are asking that aren't answered on your website.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section id="integrations" class="integrations-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Seamless Ecosystem</h2>
+        <p>Awaylable connects natively with your existing commerce and support stack to drive maximum value from day
+          one.</p>
+      </div>
+
+      <div class="integrations-showcase">
+        <div class="integration-main-card">
+          <div class="int-badge">LIVE NOW</div>
+          <div class="int-logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Shopify_Logo.png" alt="Shopify Logo"
+              class="shopify-logo-large">
+          </div>
+          <h3>Shopify Native Integration</h3>
+          <p>Direct sync with your Shopify catalog, orders, and fulfillment. Turn your store's brain on with a single
+            click.</p>
+        </div>
+
+        <div class="integrations-vision-grid">
+          <div class="int-vision-card upcoming">
+            <div class="int-icon">📦</div>
+            <h4>Magento</h4>
+            <span class="vision-tag">COMING SOON</span>
+          </div>
+          <div class="int-vision-card upcoming">
+            <div class="int-icon">🛒</div>
+            <h4>WooCommerce</h4>
+            <span class="vision-tag">COMING SOON</span>
+          </div>
+          <div class="int-vision-card upcoming">
+            <div class="int-icon">☁️</div>
+            <h4>Salesforce</h4>
+            <span class="vision-tag">Q3 2026</span>
+          </div>
+          <div class="int-vision-card upcoming">
+            <div class="int-icon">💬</div>
+            <h4>Intercom</h4>
+            <span class="vision-tag">Q4 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-footer text-center">
+        <p>Scaling our ecosystem roadmap daily. <strong>Need a custom connector?</strong> <a href="#contact">Let's build
+            it.</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Section (Visha World) -->
+  <section class="case-study-outer">
+    <div class="container">
+      <div class="case-study-hero">
+        <div class="cs-badge">CASE STUDY</div>
+        <h2>Visha World is already<br>proving the model.</h2>
+        <p class="cs-subtext">Mumbai-based electronics retailer with 1,000+ SKUs on Shopify replaced a single-person
+          WhatsApp bottleneck with an always-on conversational sales layer.</p>
+      </div>
+
+      <div class="case-study-grid">
+        <!-- Quote Side -->
+        <div class="cs-quote-box">
+          <div class="quote-mark">“</div>
+          <blockquote>
+            Awaylable helps us answer product questions, recommend alternatives, and support customers around the clock
+            without waiting for one team member to respond manually.
+          </blockquote>
+          <div class="cs-client-info">
+            <img src="assets/visha-world-logo.png" alt="Visha World Logo" class="visha-logo-cs">
+          </div>
+        </div>
+
+        <!-- Stats Side -->
+        <div class="cs-stats-stack">
+          <div class="cs-stat-card">
+            <span class="stat-label">Monthly sessions</span>
+            <div class="stat-value">1.5L+</div>
+          </div>
+          <div class="cs-stat-card">
+            <span class="stat-label">Revenue uplift</span>
+            <div class="stat-value">₹1.43L</div>
+          </div>
+          <div class="cs-stat-card">
+            <span class="stat-label">Support coverage</span>
+            <div class="stat-value">24/7</div>
+          </div>
+          <div class="cs-stat-card outcome-card">
+            <span class="stat-label">Operational outcome</span>
+            <div class="stat-value">Zero manual WhatsApp dependency</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Hugo-Style Scroll FAQ Section -->
+  <section id="faq" class="hugo-faq-section">
+    <div class="container h-faq-container">
+      <!-- Left Side: Sticky Text -->
+      <div class="h-faq-left">
+        <div class="sticky-wrapper">
+          <h2>Got questions?<br><span>We have the answers.</span></h2>
+          <a href="#contact" class="btn h-btn-primary">Got more questions? Ask Awaylable &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Right Side: Chat Bubbles -->
+      <div class="h-faq-right">
+
+        <div class="bubble-pair reveal-animate">
+          <div class="bh-question">What if the AI Agent gets something wrong?</div>
+          <div class="bh-answer">Awaylable comes with full observability and Seamless Human Handoff. If it ever
+            encounters something outside its safety parameters, it instantly connects the customer to a real person—with
+            full context—while logging the knowledge gap so you can train it for next time.</div>
+        </div>
+
+        <div class="bubble-pair reveal-animate">
+          <div class="bh-question">What is an example of AI customer support?</div>
+          <div class="bh-answer">A customer messages you at 2:00 AM asking, "Is the Blue jacket medium available?".
+            Awaylable checks your Shopify inventory instantly, confirms stock, provides a checkout link, and answers
+            completely without a human ever waking up.</div>
+        </div>
+
+        <div class="bubble-pair reveal-animate">
+          <div class="bh-question">Does it support other languages?</div>
+          <div class="bh-answer">Yes, it features native multilingual processing. It can seamlessly understand a query
+            in Hindi, process the logical intent, check your English backend documents, and reply conversationally in
+            flawless Hindi.</div>
+        </div>
+
+        <div class="bubble-pair reveal-animate">
+          <div class="bh-question">Is the pricing really a flat subscription?</div>
+          <div class="bh-answer">Absolutely. We don't charge random per-message markup fees. You choose a volume tier,
+            and you pay a predictable, flat subscription to run your customer engines without fear of sudden traffic
+            spikes destroying your budget.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Powered by Atomnik Section -->
+  <section class="atomnik-powered-block"
+    style="background: linear-gradient(135deg, #1c1c1c, #2a2a2a); color: var(--white); padding: 5rem 0; position: relative; overflow: hidden;">
+    <div class="container text-center" style="position: relative; z-index: 1;">
+      <img src="assets/atomnik.png" alt="Atomnik Technologies"
+        style="max-height: 80px; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+      <h2 style="color: var(--white); font-size: 2.2rem; margin-bottom: 0.5rem;">Powered by Atomnik Technologies</h2>
+      <div class="indian-divider" style="margin: 1rem auto 2rem; filter: brightness(0) invert(1) opacity(0.3);"></div>
+      <p style="color: #ccc; max-width: 600px; margin: 0 auto 2rem; font-size: 1.15rem; line-height: 1.6;">
+        From automating rules-based business processes to building intelligent AI co-pilots like Awaylable, we create
+        robust solutions that save time, cut costs, and accelerate business growth. Focus on growth, we'll handle the
+        busywork.
+      </p>
+      <a href="https://atomnik.com" target="_blank" class="btn btn-primary">Explore Atomnik Ecosystem</a>
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="final-cta-section">
+    <div class="container text-center">
+      <h2>Ready to transform your business?</h2>
+      <p>Join the future of autonomous customer engagement and start saving time today.</p>
+      <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank"
+        class="btn btn-primary btn-large">Book a Demo Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="assets/awaylable-logo.png" alt="Awaylable"></div>
+          <p>Turning complexity into clarity for your customer support and pre-sales interactions.</p>
+        </div>
+        <div class="footer-contact" id="contact">
+          <h4>Contact Us</h4>
+          <p>Email: <a href="mailto:info@atomnik.com">info@atomnik.com</a></p>
+          <p>Phone: <a href="tel:+918451850296">+91 84518 50296</a></p>
+        </div>
+        <div class="footer-made-in">
+          <!-- Made in India motif -->
+
+        </div>
+      </div>
+      <div class="footer-bottom flex-footer-bottom">
+        <p>&copy; 2026 <a href="https://atomnik.com" target="_blank"
+            style="color:var(--white);text-decoration:underline;">Atomnik Technologies</a>. All rights reserved.</p>
+        <div class="powered-by">
+          <span>Powered by</span>
+          <a href="https://atomnik.com" target="_blank">
+            <img src="assets/atomnik.png" alt="Atomnik Technologies" class="atomnik-logo-footer">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- Floating Book Demo Button -->
+  <a href="https://cal.com/atomnik/awaylable-24x7-customer-demo" target="_blank"
+    class="floating-demo-btn shadow-bounce">
+    <span class="icon"></span> Book Demo
+  </a>
+
   <script src="script.js"></script>
 </body>
+
 </html>
